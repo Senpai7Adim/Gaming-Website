@@ -464,7 +464,7 @@ header {
 }
 
 .contact-section .image3 {
-    left: 80px;
+    left: 5%;
     /*bottom: 40px;*/
     height: 300px;
     margin-top: 15%;
@@ -556,7 +556,7 @@ footer .social-links i {
     }
     100% {
         filter: blur(30px);
-        transform: translateY(-100px);
+        transform: translateY(-200px);
         opacity: 0;
     }
 }
@@ -580,6 +580,25 @@ footer .social-links i {
         opacity: 1;
         transform: translateY(0) scale(1);
     }
+}
+
+@media screen and (max-width: 1500px) {
+    .contact-section .image3{
+        bottom: 35px;
+        left: 5%;
+
+    }
+    .contact-section .image1{
+        height: 40%;
+   
+        bottom: 25px;
+    
+    }
+
+    .contact-section{
+        height: 95vh;
+    }
+    
 }
 
 /* ===== TABLET (LANDSCAPE & PORTRAIT) ===== */
@@ -607,10 +626,32 @@ footer .social-links i {
     .card h1 {
         font-size: 50px;
     }
+    .contact-section .image1 {
+        height: 290px;
+        right: -20px;
+        top: 35%;
+    }
+    
+    .contact-section .image2 {
+        height: 140px;
+        left: -15px;
+        top: 0px;
+    }
+    
+    .contact-section .image3 {
+        max-height: 200px;
+        left: 10px;
+        bottom: 0px;
+    }
+    .contact-section{
+        /*border: 1px solid red;*/
+        height: 25px;
+        /*margin-bottom: 10%;*/
+    }
 }
 
 /* ===== TABLET (PORTRAIT) ===== */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 810px) {
     header {
         padding: 10px 20px;
     }
@@ -663,7 +704,7 @@ footer .social-links i {
     }
     
     .stones {
-        width: 350px;
+        width: 510px;
         margin-top: 25%;
     }
     
@@ -698,23 +739,29 @@ footer .social-links i {
     
     .contact-section {
         padding: 30px 15px;
+        margin-bottom: 0px;
     }
     
     .contact-section h1 {
         font-size: 40px;
         max-width: 90%;
+   
+  
+    }
+    .contact-section h1, .contact-section p{
+        margin-top: 10%;
     }
     
     .contact-section .image1 {
         height: 250px;
         right: 20px;
-        top: 10%;
+        top: 50%;
     }
     
     .contact-section .image2 {
         height: 180px;
         left: 20px;
-        top: 30px;
+        top: 0px;
     }
     
     .contact-section .image3 {
@@ -909,7 +956,7 @@ footer .social-links i {
     .contact-section .image1 {
         height: 200px;
         right: -20px;
-        top: 40%;
+        top: 35%;
     }
     
     .contact-section .image2 {
@@ -995,7 +1042,32 @@ footer .social-links i {
     }
     
     .stones {
-        width: 250px;
-        margin-top: 60%;
+        width: 270px;
+        margin-top: 80%;
+    }
+       .contact-section .image1 {
+        display: none;
+        height: 200px;
+        right: -20px;
+        top: 35%;
+    }
+    
+    .contact-section .image2 {
+        height: 140px;
+        left: -15px;
+        top: 0px;
+        display: none;
+    }
+    
+    .contact-section .image3 {
+        max-height: 150px;
+        left: 10%;
+        margin-top: 1000px;
+        bottom: -7%;
+
+    }
+    .contact-section{
+        height: 450px;
+        margin-bottom: 15%;
     }
 }
