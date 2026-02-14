@@ -889,7 +889,7 @@ footer .social-links i {
     
     .stones {
         width: 300px;
-        margin-top: 90%;
+        margin-top: 99%;
     }
     
     .about-section h4 {
@@ -970,7 +970,7 @@ footer .social-links i {
     .contact-section .image3 {
         max-height: 200px;
         left: 10px;
-        bottom: 0px;
+        bottom: 5%;
     }
     .contact-section{
         height: 450px;
