@@ -15,6 +15,18 @@ nextBtn.addEventListener('click', function(){
 })
 
 // Mobile Menu Toggle
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        preloader.classList.add('loaded');
+        
+        // Remove from DOM after transition
+        setTimeout(() => {
+            preloader.style.display = 'none';
+        }, 800);
+    }
+});
+
 document.addEventListener('DOMContentLoaded', function() {
     const mobileMenuToggle = document.getElementById('mobileMenuToggle');
     const mainHeader = document.getElementById('mainHeader');
